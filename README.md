@@ -34,3 +34,9 @@ curl -X POST "http://localhost:8080/api/students" -H "Content-Type: application/
 curl -X POST "http://localhost:8080/api/enrollments" -H "Content-Type: application/json" -d "{\"studentId\":1,\"courseId\":1,\"enrollmentDate\":\"2024-01-20\",\"grade\":\"A\"}"
 ```
 
+### Verify in DB
+
+To verify whether all the above data is persisted in the DB
+```
+http://localhost:8080/h2-console
+```
